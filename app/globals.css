@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0b1220;
+  --foreground: #e6eefc;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: radial-gradient(1200px 600px at 80% -10%, rgba(74, 185, 255, 0.20), transparent 50%),
+              radial-gradient(800px 400px at 10% -5%, rgba(26, 155, 255, 0.18), transparent 40%),
+              #0b1220;
+  color: var(--foreground);
+}
+
+.container {
+  @apply mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.section {
+  @apply py-16 sm:py-20;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-md bg-brand-500 px-5 py-3 text-base font-semibold text-white shadow-sm hover:bg-brand-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-400;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-md border border-white/20 bg-white/5 px-5 py-3 text-base font-semibold text-white hover:bg-white/10;
+}
